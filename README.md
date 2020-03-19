@@ -2,9 +2,11 @@
 
 Basic hook for forms that will transform data on submit to an object format, it relys on the developer to be using the html validations on inputs. 
 
-for now just copy index.js into your project. 
+
 
 ### Usage
+
+For now just copy index.js into your project, will create npm module soon. 
 
 useForm should be given a function that you want to pass data to do fire once form is submitted. useForm returns 
 
