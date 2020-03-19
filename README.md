@@ -14,6 +14,8 @@ useForm should be given a function that you want to pass data to do fire once fo
 - formData, the data that has been submited by the form
 - updateFormData, if you want to update the data manually without having to submit. 
 
+names of inputs will be used as keys in object
+
 #### In Action 
 
 ```
@@ -32,7 +34,12 @@ const FormComponent = ({onSubmit}) => {
 
 <FormComponent onSubmit={postData}/>
 
-//The postData function would get this as a parameter
+
+The postData function would get this as a parameter assuming:
+
+email = test@test.com
+password = somepassword1234!!!
+signup was checked
 
 {
     email: "test@test.com",
