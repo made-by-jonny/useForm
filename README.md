@@ -23,9 +23,16 @@ const FormComponent = ({onSubmit}) => {
     const [submitAction] = useForm(onSubmit)
     return (
         <form onSubmit={submitAction}>
-            <input name="email" required/>
-            <input name="password" type="password" required/>
-            <input name="signup" type="checkbox" />
+        
+            <label htmlFor="email">Email</label>
+            <input id="email" name="email" required/>
+            
+            <label htmlFor="password">Password</label>
+            <input id="password" name="password" type="password" required/>
+            
+            <label htmlFor="signup">Sign up to newsletter</label>
+            <input id="signup" name="signup" type="checkbox" />
+            
             <button type="submit">Submit</button>
         </form>
     )
